@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <title>🎉新年快乐,马晓彤🎉</title>
+  <link rel="stylesheet" type="text/css" href="styles/index.min.css" />
+  <script src="styles/Waline.min.js"></script>
+</head>
+
+<body>
+  <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+  <script type="text/javascript"
+    src="styles/boom_color.min.js"></script>
+  <div>
+    <img src="images/hang_lintel_left.svg" class="corner-image" id="left">
+    <img src="images/hang_lintel_right.svg" class="corner-image" id="right">
+  </div>
+  <div>
+    <img src="images/kuilong_bull.svg" class="rotate-image">
+  </div>
+  <div>
+    <img src="images/happy_new_year.svg" class="happy-new-year">
+    <img src="images/maxiaotong.svg" class="maxiaotong">
+  </div>
+
+  <div class="comment">
+    <div id="waline"></div>
+  </div>
+  <!--Waline配置-->
+  <script>
+    new Waline({
+      el: '#waline',
+      path: location.pathname,
+      serverURL: 'https://bless-mxt.vercel.app/'
+    });
+  </script>
+
+</body>
+
+</html>

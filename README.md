@@ -1,2 +1,0 @@
-# bless
-🎉Happy new year🎉
