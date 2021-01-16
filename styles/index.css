@@ -9,23 +9,9 @@ body {
   background: #fffef9;
 }
 
-/*拖动式烟花*/
-#fireworks {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: auto;
-  z-index: 9999;
-}
-
 /*点击式烟花*/
 #fireworks-click {
   position: fixed;
-  top: auto;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
   z-index: 9999;
   pointer-events: none;
 }
