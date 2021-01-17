@@ -6,30 +6,36 @@
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <title>🎉新年快乐,马晓彤🎉</title>
-  <link rel="stylesheet" type="text/css" href="styles/index.css" />
-  <script src="styles/Waline.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/styles/index.css" />
+  <script src="/styles/Waline.min.js"></script>
 </head>
 
 <body>
 
-  <audio autoplay="autoplay" loop="loop" preload="true" controls="controls" src="/audio/Dewdrops-1.mp3"
+  <audio autoplay="autoplay" loop="loop" preload="true" controls="controls" src="/audio/Dewdrops.mp3"
     style="display:none">
   </audio>
+  
+  <div class="mask">
+    <canvas class="music-background" id="background"></canvas>
+  </div>
+
+  <script src="/styles/plants.js"></script>
 
   <canvas class="fireworks" id="fireworks-click"></canvas>
-  <script type="text/javascript" src="styles/fireworks-click.min.js"></script>
+  <script type="text/javascript" src="/styles/fireworks-click.min.js"></script>
 
   <div>
     <div>
-      <img src="images/hang_lintel_left.svg" class="corner-image" id="left">
-      <img src="images/hang_lintel_right.svg" class="corner-image" id="right">
+      <img src="/images/hang_lintel_left.svg" class="corner-image" id="left">
+      <img src="/images/hang_lintel_right.svg" class="corner-image" id="right">
     </div>
     <div>
-      <img src="images/kuilong_bull.svg" class="rotate-image">
+      <img src="/images/kuilong_bull.svg" class="rotate-image">
     </div>
     <div>
-      <img src="images/happy_new_year.svg" class="happy-new-year">
-      <img src="images/maxiaotong.svg" class="maxiaotong">
+      <img src="/images/happy_new_year.svg" class="happy-new-year">
+      <img src="/images/maxiaotong.svg" class="maxiaotong">
     </div>
   </div>
 
@@ -37,7 +43,6 @@
     <div id="waline"></div>
   </div>
 
-  <!--Waline配置-->
   <script>
     new Waline({
       el: '#waline',
