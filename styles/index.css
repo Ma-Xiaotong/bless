@@ -33,6 +33,10 @@ body {
     animation: rotate infinite linear 25s;
   }
 
+  .music-background {
+    width: 33%;
+  }
+
   .happy-new-year {
     width: 20.73%;
     height: 9.26%;
@@ -71,6 +75,10 @@ body {
     animation: rotate infinite linear 25s;
   }
 
+  .music-background {
+    width: 61.88%;
+  }
+
   .happy-new-year {
     width: 39.91%;
     height: 7.52%;
@@ -105,13 +113,13 @@ body {
 /*音乐动画背景部分*/
 .music-background {
   position: absolute;
-  width: 33%;
   height: auto;
-  top: 3.9%;
+  top: 38.2%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
+/*音乐动画遮罩层*/
 .mask {
   position: absolute;
   width: 100%;
